@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".linkler">
+
+    <TextView
+        android:id="@+id/yararliLinklerLbl"
+        android:layout_width="261dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="50dp"
+        android:text="YARARLI LİNKLER"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/afetBilgiBtn"
+        android:layout_width="366dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@android:color/transparent"
+        android:isScrollContainer="false"
+        android:text="Afet Bilgi"
+        android:textAlignment="viewStart"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/black"
+        android:onClick="sentToAfetBilgi"
+        app:icon="@drawable/linkicon"
+        app:iconGravity="start"
+        app:iconSize="30dp"
+        app:iconTint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yararliLinklerLbl" />
+
+    <Button
+        android:id="@+id/afetHaritasiBtn"
+        android:layout_width="366dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@android:color/transparent"
+        android:text="Afet Haritası"
+        android:textAlignment="textStart"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/black"
+        android:onClick="sentToafetHaritasi"
+        app:icon="@drawable/linkicon"
+        app:iconSize="30dp"
+        app:iconTint="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/afetBilgiBtn"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/afetBilgiBtn"
+        app:layout_constraintTop_toBottomOf="@+id/afetBilgiBtn" />
+
+    <Button
+        android:id="@+id/yaknimiBulBtn"
+        android:layout_width="366dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@android:color/transparent"
+        android:text="Yakınımı Bul"
+        android:textAlignment="textStart"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/black"
+        android:onClick="sentToYakinimiBul"
+        app:icon="@drawable/linkicon"
+        app:iconSize="30dp"
+        app:iconTint="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/afetHaritasiBtn"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/afetHaritasiBtn"
+        app:layout_constraintTop_toBottomOf="@+id/afetHaritasiBtn" />
+
+    <Button
+        android:id="@+id/trafikBtn"
+        android:layout_width="366dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@android:color/transparent"
+        android:text="Trafiğe Kapalı Yollar"
+        android:textAlignment="textStart"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/black"
+        android:onClick="sentToTrafik"
+        app:icon="@drawable/linkicon"
+        app:iconSize="30dp"
+        app:iconTint="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/yaknimiBulBtn"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/yaknimiBulBtn"
+        app:layout_constraintTop_toBottomOf="@+id/yaknimiBulBtn" />
+
+    <Button
+        android:id="@+id/cozumBtn"
+        android:layout_width="366dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@android:color/transparent"
+        android:text="Afet Çözüm Linkleri"
+        android:textAlignment="textStart"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/black"
+        android:onClick="sentToCozum"
+        app:icon="@drawable/linkicon"
+        app:iconSize="30dp"
+        app:iconTint="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/trafikBtn"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/trafikBtn"
+        app:layout_constraintTop_toBottomOf="@+id/trafikBtn" />
+
+    <Button
+        android:layout_width="366dp"
+        android:layout_height="56dp"
+        android:text="Anasayfa"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:onClick="sentToAnasayfa"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/cozumBtn"
+        app:layout_constraintStart_toStartOf="@+id/cozumBtn"
+        app:layout_constraintTop_toBottomOf="@+id/cozumBtn"
+        app:layout_constraintVertical_bias="0.746" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

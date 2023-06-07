@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".detay">
+
+
+
+    <ImageView
+        android:id="@+id/detailImgVw"
+        android:layout_width="420dp"
+        android:layout_height="255dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/spinnerDetayTxtVw"
+        android:layout_width="382dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="30dp"
+        android:text="DURUMU:"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.551"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detailImgVw" />
+
+    <TextView
+        android:id="@+id/urunCesidiDetayTxtVw"
+        android:layout_width="382dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="20dp"
+        android:text="ÜRÜN ÇEŞİDİ:"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/spinnerDetayTxtVw"
+        app:layout_constraintStart_toStartOf="@+id/spinnerDetayTxtVw"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerDetayTxtVw" />
+
+    <TextView
+        android:id="@+id/adetDetayTxtVw"
+        android:layout_width="382dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="20dp"
+        android:text="ADET:"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/urunCesidiDetayTxtVw"
+        app:layout_constraintHorizontal_bias="0.384"
+        app:layout_constraintStart_toStartOf="@+id/urunCesidiDetayTxtVw"
+        app:layout_constraintTop_toBottomOf="@+id/urunCesidiDetayTxtVw" />
+
+    <TextView
+        android:id="@+id/aciklamaDetayTxtVw"
+        android:layout_width="382dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="20dp"
+        android:text="AÇIKLAMA:"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/adetDetayTxtVw"
+        app:layout_constraintHorizontal_bias="0.448"
+        app:layout_constraintStart_toStartOf="@+id/adetDetayTxtVw"
+        app:layout_constraintTop_toBottomOf="@+id/adetDetayTxtVw" />
+
+    <Button
+        android:id="@+id/kaydet"
+        android:onClick="sqlBtnClick"
+        android:layout_width="405dp"
+        android:layout_height="48dp"
+        android:text="KAYDET"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

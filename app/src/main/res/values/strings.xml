@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">donemProjesi</string>
+    <string name="head_1">cok kullanılmamış koltuk takımı</string>
+    <string name="head_2">cok kullanılmamış masa takımı</string>
+    <string name="head_3">cok kullanılmamış sandalye takımı</string>
+    <string name="head_4">cok kullanılmamış dolap  takımı</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+
+    <string-array name="spinner">
+        <item>yeni</item>
+        <item>yeni gibi</item>
+        <item>iyi</item>
+        <item>makul</item>
+        <item>yıpranmış</item>
+
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>
